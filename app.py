@@ -23,6 +23,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", width=300)
 
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+
     size = (224, 224)
     image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
 
